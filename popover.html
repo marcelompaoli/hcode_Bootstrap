@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mystyles.css">
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-success btn-lg" data-toggle="popover" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?">Mostrar Popover</button>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="popover" title="Título do Popover" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?">Mostrar Popover</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="popover" title="Popover in LEFT" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?" data-placement="left">Popover in LEFT</button>
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="popover" title="Popover in BOTTOM" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?" data-placement="bottom">Popover in BOTTOM</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="popover" title="Popover in TOP" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?" data-placement="top">Popover in TOP</button>
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="popover" title="Right is the Default" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?" data-placement="right">Popover in RIGHT</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-secondary btn-lg" data-toggle="popover" title="Título do Popover" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?" data-trigger="focus">Popover Abre no Focus</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-secondary btn-lg" data-toggle="popover" title="Título do Popover" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum distinctio, ea expedita fugiat ipsa iste itaque, minima quaerat quam quo quod repudiandae sed sequi sit vero, voluptas?" data-trigger="hover">Popover Abre no Hover</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-danger btn-lg" id="btn-click">Abrir POPOVERS</button>
+
+    </div>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            // Acionando o Popover
+            $('[data-toggle="popover"]').popover();
+        });
+        $('#btn-click').on('click', e => {
+            $('[data-toggle="popover"]').popover('toggle');
+        });
+    </script>
+</body>
+</html>

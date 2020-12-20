@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Input Groups</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nome Completo</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Primeiro Nome">
+            <input type="text" class="form-control" placeholder="Último Nome">
+        </div>
+        <hr>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">R$</span>
+            </div>
+            <div class="input-group-prepend">
+                <span class="input-group-text">0,00</span>
+            </div>
+            <input type="number" class="form-control">
+        </div>
+
+    </div>    
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

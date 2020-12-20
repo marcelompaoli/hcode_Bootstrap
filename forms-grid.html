@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Grid</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <input type="text" placeholder="Primeiro nome" class="form-control">
+                    <small class="text-muted">Digite sem abreviações</small>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Último nome" class="form-control">
+                    <small class="text-muted">Digite sem abreviações</small>
+                </div>
+            </div>
+            <button class="btn btn-success"type="submit">Enviar</button>
+        </form>
+
+        <hr>
+
+        <form action="">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" placeholder="Primeiro nome" class="form-control">
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Último nome" class="form-control">
+                </div>
+            </div>
+            <button class="btn btn-success"type="submit">Enviar</button>
+        </form>
+        
+        <hr>
+
+        <form action="">
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="">Primeiro Nome</label>
+                    <input type="text" placeholder="Primeiro nome" class="form-control">
+                </div>
+                <div class="col form-group">
+                    <label for="">Último Nome</label>
+                    <input type="text" placeholder="Último nome" class="form-control">
+                </div>
+            </div>
+            <button class="btn btn-success"type="submit">Enviar</button>
+        </form>   
+
+    </div>    
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

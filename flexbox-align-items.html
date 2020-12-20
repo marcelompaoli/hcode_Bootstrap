@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox - align-items</title>
+    <link rel="shortcut icon" href="assets/mpaoli.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- align-items-stretch - alinhamento no eixo Y, vertical, ele estica a div conforme a altura, stretch é o default -->
+        <div class="d-flex align-items-stretch bg" style="height: 200px;">
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+        </div>
+        <!-- align-items-start - alinhamento no eixo Y, vertical, alinha no inicio -->
+        <div class="d-flex align-items-start bg" style="height: 200px;">
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+        </div>
+        <!-- align-items-end - alinhamento no eixo Y, vertical, alinha no final -->
+        <div class="d-flex align-items-end bg" style="height: 200px;">
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+        </div>
+        <!-- align-items-center - alinhamento no eixo Y, vertical, alinha no centro -->
+        <div class="d-flex align-items-center bg" style="height: 200px;">
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+        </div>
+        <!-- align-items-baseline - alinhamento no eixo Y, vertical, alinha na base do elemento -->
+        <div class="d-flex align-items-baseline bg" style="height: 200px;">
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

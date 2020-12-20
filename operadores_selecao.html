@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System Bootstrap</title>
+    <link rel="shortcut icon" href="assets/mpaoli.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/operadores_selecao.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="font-weight-bold">Seletores CSS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-justify">
+                <p>Seletor de atributo é um tipo de seletor CSS que permite seleção baseada em um atributo definido para o elemento. A sintaxe de um seletor de atributo consiste no nome do elemento seguido do sinal colchetes (<strong class="text-danger">[ ]</strong>) e dentro dos colchetes uma expressão. A expressão dentro do colchetes admite sete sintaxes diferentes e cada uma delas define um tipo de seletor de atributo, conforme mostrado na tabela seguir:</p>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col-sm-4 text-center"><h2>Seletor</h2></div>
+            <div class="col-sm-8 text-center"><h2>Seleção</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo = "bar"]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo cujo valor é bar</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo ~= "bar"]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo cujo valor é uma lista de valores e um deles é bar</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo ^= "bar"]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo cujo valor começa com a string bar</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo $= "bar"]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo cujo valor termina com a string bar</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo *= "bar"]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo cujo valor contém a string bar</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">E[foo |= "pt"]</div>
+            <div class="col-sm-8">Seleciona elementos E com atributo foo cujo valor é do tipo pt-* ou pt</div>
+        </div>
+    </div>
+
+    <div class="container bg-color-red">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="font-weight-bold">Exemplos:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">p[class]</div>
+            <div class="col-sm-8">seleciona todos os elementos parágrafo aos quais foi definido o atributo <strong>class</strong>.</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">p[class="alerta"]</div>
+            <div class="col-sm-8">seleciona todos os elementos parágrafo aos quais foi definido o atributo <strong>class</strong> com o valor alerta</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">p[class~="alerta"]</div>
+            <div class="col-sm-8">seleciona todos os elementos parágrafo aos quais foi definida uma lista de valores para o atributo <strong>class</strong> e <strong>um dos valores é alerta</strong>.</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">div[id^="ob"]</div>
+            <div class="col-sm-8">seleciona todos os elementos <strong>div</strong> aos quais foi definido o atributo <strong>id</strong> com o valor que começa com a string <strong>"ob"</strong>.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">h1[title$="ir"]</div>
+            <div class="col-sm-8">seleciona todos os elementos <strong>h1</strong> aos quais foi definido o atributo <strong>title</strong> com o valor que termina com a string <strong>"ir"</strong></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">h4[class*="abf"]</div>
+            <div class="col-sm-8">seleciona todos os elementos <strong>h4</strong> aos quais foi definido o atributo <strong>class</strong> com um valor que contém a string <strong>"abf"</strong>.</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 font-weight-bold">a[lang|="en"]</div>
+            <div class="col-sm-8">seleciona todos os elementos a aos quais foi definido o atributo lang com um valor que contém a string <strong>"en-"</strong> ou a string <strong>"en"</strong></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <p>Créditos: 
+                <a href="https://www.dicas-l.com.br/arquivo/seletores_css_seletor_de_atributo.php">Maurício (Maujor) Samy Silva
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mystyles.css">
+</head>
+<body>
+    <button type="button" data-toggle="modal" data-target="#modal-1" class="btn btn-primary btn-lg">Abrir</button>
+    <div class="modal" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Teste do Modal</div>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis dolor ducimus quam quos soluta voluptas! Aut cumque deleniti dolorem eum laboriosam minus nobis reiciendis repellendus voluptas voluptates! Autem, odit.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-secondary">
+                        <span>Cancelar</span>
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btn-continue">Continuar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(() => {
+        $('#btn-continue').on('click', e => {
+           $('#modal-1').modal('hide');
+        });
+    });
+</script>
+</body>
+</html>

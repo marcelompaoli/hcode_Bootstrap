@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <!-- Badges parcem botões porém é como se fosse labels -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body{
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h1>
+    <h2>Hcode Treinamentos <span class="badge badge-secondary">Novo</span></h2>
+    <h3>Hcode Treinamentos <span class="badge badge-warning">Novo</span></h3>
+    <h4>Hcode Treinamentos <span class="badge badge-success">Novo</span></h4>
+    <h5>Hcode Treinamentos <span class="badge badge-danger">Novo</span></h5>
+    <h6>Hcode Treinamentos <span class="badge badge-info">Novo</span></h6>
+    <hr>
+    <button type="button" class="btn btn-primary" id="btn-click">Clique <span class="badge badge-light">0</span></button>
+    <hr>    
+    <button type="button" class="btn btn-primary">Caixa de Entrada <spam class="badge badge-light">5</spam>
+        <!-- Explicação para os leitores de tela - Accessibilidade - Class 'sr-only'-->
+        <span class="sr-only">Há 5 mensagens não lidas</span>
+    </button>
+    <hr>
+    <span class="badge badge-primary">1</span>
+    <span class="badge badge-secondary">2</span>
+    <span class="badge badge-success">3</span>
+    <span class="badge badge-danger">4</span>
+    <span class="badge badge-warning">5</span>
+    <span class="badge badge-info">6</span>
+    <span class="badge badge-dark">7</span>
+    <span class="badge badge-light">8</span>
+    <hr>
+    <p>Badge normal: <span class="badge badge-primary">OK</span></p>
+    <p>Badge com pill: <span class="badge badge-primary badge-pill">OK</span></p>
+    <hr>
+    <a href="#" class="badge badge-success">Verde</a>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(() => {
+        $('#btn-click').on('click', e => {
+            const valor = parseInt($(e.target).find('.badge').text());
+            $(e.target).find('.badge').text(valor + 1);
+        });
+    });
+</script>
+</body>
+</html>

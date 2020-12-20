@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Colors</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>IDADE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>1</td>
+                    <td>João Rafael</td>
+                    <td>13</td>
+                </tr>
+                <tr class="table-success">
+                    <td>2</td>
+                    <td>Mateus Queirós</td>
+                    <td>13</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>3</td>
+                    <td>Rafael Ribeiro</td>
+                    <td>20</td>
+                </tr>
+                <tr class="table-info">
+                    <td>4</td>
+                    <td>Ronaldo Braz</td>
+                    <td>35</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>5</td>
+                    <td>Marcelo Martins</td>
+                    <td>35</td>
+                </tr>
+                <tr class="table-light">
+                    <td>6</td>
+                    <td>Ricardo Martins</td>
+                    <td>35</td>
+                </tr>
+                <tr class="table-dark">
+                    <td>7</td>
+                    <td>Julio Lopes</td>
+                    <td>35</td>
+                </tr>
+                <tr class="table-info">
+                    <td>8</td>
+                    <td class="bg-danger text-white">Com table-info e bg-danger</td>
+                    <td>35</td>
+                </tr>
+                <tr class="bg-info">
+                    <td>8</td>
+                    <td class="table-danger text-white">Com bg-info e table-danger</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>    
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

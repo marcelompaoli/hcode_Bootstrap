@@ -1,0 +1,13 @@
+.container {
+    padding: 2rem;
+}
+
+/* '>' Indica filho de alguma classe ou de atributo ou de tag, conforme o caso*/
+/* [class^=.col-] - operador de busca para '.col-' 
+https://www.dicas-l.com.br/arquivo/seletores_css_seletor_de_atributo.php */
+.row > .col, .row > [class^="col-"], .bg {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(243, 117, 32, .15);
+    border: 1px solid  rgba(243, 117, 32, .2);
+}

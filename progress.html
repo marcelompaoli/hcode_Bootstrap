@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- 
+browser-sync start --server --files "*.html" "assets/css/*.css" 
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Progresso</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mystyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" role="progress-bar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar w-25" role="progress-bar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar" role="progress-bar" style="width: 10%"></div>
+        </div>
+
+        <hr>
+
+        <div id="progress" class="progress">
+            <div class="progress-bar" role="progress-bar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar bg-danger w-25" role="progress-bar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar bg-success w-25" role="progress-bar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress" style="height: 70px">
+            <div class="progress-bar bg-success w-25" role="progress-bar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress" style="height: 3px">
+            <div class="progress-bar bg-info w-25" role="progress-bar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger w-25" role="progress-bar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning w-25" role="progress-bar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark w-25" role="progress-bar">25%</div>
+        </div>
+
+        <hr>
+
+    </div>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            // Vamos colocar em uma variável global do window para posteriormente parar o progresso
+            window.progressInterval = setInterval(() => {
+                let progress = $('#progress .progress-bar').css('width').replace('%', '');
+                progress = parseInt(progress) + 1;
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                }
+                $('#progress .progress-bar').css('width', progress + '%');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

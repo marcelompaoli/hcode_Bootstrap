@@ -1,0 +1,11 @@
+$body-bg: #d5f3f7; //Alterando cor padrão do background
+$body-color: #b40000; //Alterando cor padrão da fonte
+$enable-rounded: false; //Retirando Bordas
+$enable-pointer-cursor-for-buttons: false; //Retirando o estilo do mouse no hover, retira a mãozinha
+
+$theme-colors: (
+    "primary": #EE5A24,
+    "success": #5f27cd
+); // Alterando a cor de primary e de success
+
+@import "../node_modules/bootstrap/scss/bootstrap";
